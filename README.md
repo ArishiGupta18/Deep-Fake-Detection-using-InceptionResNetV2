@@ -32,4 +32,9 @@ The model's performance evaluation, which includes metrics like accuracy and a t
 In Fig 2, validation data is provided explicitly using the validation_data parameter in the model.fit method. The verbose parameter in model.fit is not explicitly set, so it uses the default value (usually 1, which shows progress bars during training). In the second code snippet, verbose is explicitly set to 1 in model.fit, meaning it will show progress bars during training.
 In Fig 3, a validation split is used instead of separate validation data. The validation_split parameter in the model.fit method is set to 0.15, meaning that 15% of the training data will be used for validation. And it also  includes early stopping using the EarlyStopping callback. This callback monitors the validation loss and stops training if the loss does not improve after a certain number of epochs (patience parameter). It also  uses the EarlyStopping callback, which is not present in Fig:2.
 
-
+# How to run?
+The dataset was downloaded from kaggle deepfake detection challenge: https://www.kaggle.com/c/deepfake-detection-challenge/data
+Experimental steps-
+1) run capture_img
+2) run deepfake_detection_train
+3) run model_play 
